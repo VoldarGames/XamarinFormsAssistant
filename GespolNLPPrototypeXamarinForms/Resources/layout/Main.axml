@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/ListenButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listen" />
+    <Button
+        android:id="@+id/ExecuteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Execute" />
+    <EditText
+        android:id="@+id/MyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ContextTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sin contexto..." />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matrícula: " />
+            <TextView
+                android:id="@+id/MatriculaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIN MATRICULA" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precepto: " />
+            <TextView
+                android:id="@+id/PreceptoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIN PRECEPTO" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-----------------------------------" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selection zone" />
+    <TextView
+        android:id="@+id/SelectionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  <ListView 
+    android:id="@+id/SelectionListView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>
